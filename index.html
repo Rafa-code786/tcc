@@ -1,0 +1,79 @@
+<!--INCLUIR NO HTML – index.html-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ALUNO: ALTERE AQUI o nome da escola na aba do navegador -->
+  <title>PARCEIROS DO RIO - Limpeza de rio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <!-- ALUNO: ALTERE AQUI o nome da escola -->
+  <div class="logo">PARCEIROS DO RIO</div>
+  <nav class="nav">
+    <a href="#quem-somos">Quem Somos</a>
+    <a href="#locais">Locais</a>
+    <a href="#contato">Contato</a>
+    <a href="#" class="btn-portal" id="btn-aluno">Área do Voluntário</a>
+  </nav>
+</header>
+<section class="banner">
+  <div class="banner-content">
+    <!-- ALUNO: ALTERE AQUI o título e a apresentação -->
+    <h1>Bem-vindos à nossa limpeza!</h1>
+    <p>Um projeto de preservação e cuidado beneficiente dos rios em áreas periféricas de São Paulo.</p>
+    <a href="#contato" class="btn-cta">Entre em Contato</a>
+  </div>
+</section>
+<section id="locais" class="cards-section">
+  <h2>Nossas áreas de cuidado</h2>
+  <div class="cards-container">
+    <!-- ALUNO: OPCIONAL - ajuste os níveis de ensino oferecidos pela escola -->
+    <div class="card"><span class="icon">🏞️</span><h3>Rio Aricanduva</h3><p>Um dos principais afluentes da margem esquerda do Rio Tietê, localizado na Zona Leste da cidade de São Paulo.</p></div>
+    <div class="card"><span class="icon">🌊</span><h3>Rio Itaquera</h3><p>Localizado na Zona Leste de São Paulo, passando pela região de Itaquera, Cidade Tiradentes e áreas próximas.</p></div>
+    <div class="card"><span class="icon">🌅</span><h3>Rio Pinheiros</h3><p>Um dos principais cursos d'água da cidade de São Paulo, com cerca de 25 quilômetros de extensão. Ele nasce da confluência dos rios Guarapiranga e Jurubatuba e deságua no Rio Tietê.</p></div>
+  </div>
+</section>
+<section id="quem-somos" class="about-section">
+  <div class="about-content">
+    <h2>Sobre Nosso projeto</h2>
+    <!-- ALUNO: ALTERE AQUI a apresentação da escola -->
+    <p>Nosso projeto foi criado em busca de encontrar e mobilizar voluntários para participar de ações de limpeza de rios poluídos, conectando pessoas dispostas a ajudar em iniciativas que buscam preservar o meio ambiente.</p>
+  </div>
+</section>
+<section id="contato" class="contact-section">
+  <h2>Fale Conosco</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Seu Nome Completo" required>
+    <input type="email" placeholder="Seu E-mail" required>
+    <input type="tel" placeholder="Seu Telefone / WhatsApp" required>
+    <select required>
+      <option value="">Interesse em qual local?</option>
+      <option value="Fundamental">Rio Aricanduva</option>
+      <option value="Médio">Rio Itaquera</option>
+      <option value="Técnico">Rio Pinheiros</option>
+    </select>
+    <button type="submit" class="btn-submit">Enviar solicitação</button>
+  </form>
+</section>
+<footer class="footer">
+  <!-- ALUNO: ALTERE AQUI o nome e o endereço da escola -->
+  <p>&copy; 2026 PARECEIROS DO RIO. Projeto beneficiente demonstrativo.</p>
+</footer>
+<!-- Demonstração: configure um número real apenas com autorização da escola -->
+<a href="#contato" class="btn-whatsapp" aria-label="Ir para contato">💬</a>
+<div id="modal-aluno" class="modal" role="dialog" aria-modal="true" aria-labelledby="titulo-modal">
+  <div class="modal-conteudo">
+    <button id="fechar-modal" class="fechar" aria-label="Fechar">&times;</button>
+    <h2 id="titulo-modal">Área do Voluntário (simulação)</h2>
+    <input type="text" id="usuario" placeholder="Digite seu usuário">
+    <input type="password" id="senha" placeholder="Digite sua senha">
+    <button id="btn-entrar" type="button">Entrar</button>
+    <p class="nota">Demonstração didática. Não use senhas reais.</p>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
